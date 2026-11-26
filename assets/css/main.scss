@@ -36,32 +36,3 @@
     "layout/archive",
     "layout/sidebar"
 ;
-
-/* Citation spacing only; visual identity will follow the ChatGPT design. */
-.publication-entry {
-  margin: 1em 0 1.5em;
-  overflow-wrap: anywhere;
-
-  .publication-entry__title {
-    margin: 0 0 0.3em;
-    padding: 0;
-    border: 0;
-    font-size: 1em;
-  }
-
-  p { margin: 0 0 0.25em; }
-
-  .publication-entry__venue { font-size: 0.9em; }
-
-  .publication-entry__links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25em 0.8em;
-    margin: 0.3em 0 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0.9em;
-
-    li { margin: 0; }
-  }
-}
