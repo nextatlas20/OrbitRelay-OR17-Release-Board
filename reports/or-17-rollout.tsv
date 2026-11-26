@@ -1,0 +1,7 @@
+step	code	name	version	severity	dependencies	checksum
+1	AUTH	Access Gateway	2.4.0	critical	-	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+2	API	Public Query API	2.4.0	high	AUTH	cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+3	CACHE	Edge Cache Adapter	2.4.1	medium	AUTH	bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+4	WEB	Visitor Web Shell	2.4.3	high	API,CACHE	dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+5	METRICS	Health Metrics Panel	2.4.2	medium	API	ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+6	DOCS	Operator Handbook	2.4.0	low	WEB	eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee

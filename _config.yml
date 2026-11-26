@@ -9,56 +9,54 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Rafael da Costa Silva"
+title: Orbit Relay OR-17 Release Board
 title_separator          : "-"
-name                     : &name "Rafael da Costa Silva"
-description              : &description "PhD student at ICMC-USP researching machine learning for time series, self-supervised learning, and ECG foundation models."
-# User-site domain and repository name confirmed by the owner.
-url                      : https://rafaelsilva7.github.io
-baseurl                  : ""
-repository               : "RafaelSilva7/rafaelsilva7.github.io"
+name                     : &name "Your Name"
+description: Dependency-safe public rollout manifest for Orbit Relay console 2.4
+url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+repository               : "academicpages/academicpages.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "rafael-da-costa-silva.jpg"
-  name             : "Rafael da Costa Silva"
+  avatar           : "profile.png"
+  name             : "Your Sidebar Name"
   pronouns         : # example: "she/her"  
-  bio              : "PhD student · Machine learning for time series and ECG"
-  location         :
-  employer         : "ICMC, University of São Paulo"
+  bio              : "Short biography for the left-hand sidebar"
+  location         : "Earth"
+  employer         : "Red Brick University"
   uri              : # URL
-  email            : "rafael.csilva@usp.br"
+email: release@orbitrelay.example
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=np8PquUAAAAJ"
-  lattes           : "https://lattes.cnpq.br/9614463991077343"
+  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/0000-0002-9394-9869"
+  orcid            : "https://orcid.org/yourorcidurl"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           :
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
-
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "RafaelSilva7"
+  github           : "academicpages"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          :
+  bluesky          : "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -84,7 +82,13 @@ author:
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
-# Publications use explicit year and publication_type fields; see CONTENT_SOURCES.md.
+publication_category:
+  books:
+    title: 'Books'
+  manuscripts:
+    title: 'Journal Articles'    
+  conferences:
+    title: 'Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -138,7 +142,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : rafael-da-costa-silva.jpg
+og_image                 : og-image.png   # Social media default site image (lives in /images/)
 og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -161,40 +165,6 @@ include:
   - _pages
   - files
 exclude:
-  # Keep upstream examples in source without publishing them as personal content.
-  - CONTENT_SOURCES.md
-  - AGENTS.md
-  - _posts
-  - _drafts
-  - _talks
-  - _teaching
-  - _portfolio
-  - markdown_generator
-  - scripts
-  - talkmap
-  - talkmap.py
-  - talkmap.ipynb
-  - talkmap_out.ipynb
-  - _pages/archive-layout-with-content.md
-  - _pages/category-archive.html
-  - _pages/collection-archive.html
-  - _pages/markdown.md
-  - _pages/non-menu-page.md
-  - _pages/page-archive.html
-  - _pages/portfolio.html
-  - _pages/tag-archive.html
-  - _pages/talkmap.html
-  - _pages/talks.html
-  - _pages/teaching.html
-  - _pages/terms.md
-  - _pages/year-archive.html
-  - files/bibtex1.bib
-  - files/paper1.pdf
-  - files/paper2.pdf
-  - files/paper3.pdf
-  - files/slides1.pdf
-  - files/slides2.pdf
-  - files/slides3.pdf
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -343,6 +313,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+
 
 # Mimic GitHub Pages with --safe
 whitelist:
